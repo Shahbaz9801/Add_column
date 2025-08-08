@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
+import openpyxl
 
 st.set_page_config(page_title="Excel Column Adder", layout="centered")
 
@@ -42,3 +43,4 @@ if uploaded_file:
                     file_name="updated_file.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                 )
+
